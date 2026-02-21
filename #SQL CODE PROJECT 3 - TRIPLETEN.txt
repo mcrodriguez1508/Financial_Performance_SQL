@@ -1,0 +1,22 @@
+#SQL CODE PROJECT 3 - TRIPLETEN: 
+-- Validación simple: nulos en claves de ventas_2017
+SELECT SUM( CASE WHEN numero_pedido IS NULL THEN 1 ELSE 0 END) AS nulos_numero_pedido, 
+    SUM( CASE WHEN clave_producto IS NULL THEN 1 ELSE 0 END) AS nulos_clave_product,
+    SUM( CASE WHEN clave_territorio IS NULL THEN 1 ELSE 0 END) AS nulos_clave_territorio
+FROM ventas_2017 
+;
+-- Cuenta nulos en numero_pedido como nulos_numero_pedido, clave_producto como nulos_clave_producto , clave_territorio como nulos_clave_territorio 
+
+-- Validación simple: nulos en claves de ventas_2017
+SELECT SUM( CASE WHEN numero_pedido IS NULL THEN 1 ELSE 0 END) AS nulos_numero_pedido, 
+    SUM( CASE WHEN clave_producto IS NULL THEN 1 ELSE 0 END) AS nulos_clave_product,
+    SUM( CASE WHEN clave_territorio IS NULL THEN 1 ELSE 0 END) AS nulos_clave_territorio
+FROM ventas_2017 
+;
+-- Cuenta nulos en numero_pedido como nulos_numero_pedido, clave_producto como nulos_clave_producto , clave_territorio como nulos_clave_territorio 
+
+-- Conteo de Cantidades no válidas en ventas_2017 como filas_cantidad_no_valida
+SELECT COUNT(*) AS filas_cantidad_no_valida
+FROM ventas_2017
+-- Ajusta la condición según tu regla de negocio: <= 0 (no se permite cero)
+WHERE cantidad_pedido <= 0
