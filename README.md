@@ -1,29 +1,27 @@
 # Global Financial Performance & Marketing ROI Audit 💰📈
 
 ## 📝 Context & Objective
-This project focuses on auditing the financial efficiency of marketing investments across six key international markets: **USA, Australia, UK, Germany, France, and Canada**. The goal was to determine if high advertising spend correlates with high profitability and to identify opportunities for budget optimization.
+Este análisis evalúa el desempeño financiero de seis mercados clave (**United States, Australia, United Kingdom, Germany, France y Canada**) utilizando datos de ingresos, costos operativos y costos de campañas. El objetivo es determinar la eficiencia del gasto en marketing y la rentabilidad neta mediante las métricas de **Margen_pct** y **ROI_pct**.
 
 ## 🛠 Methodology
-### Technical Stack
-- **Tools:** SQL (PostgreSQL), Microsoft Excel (Financial Modeling).
-- **Key Metrics:** Gross Profit, Margin %, ROI (Return on Investment).
+- **SQL:** Extracción y consolidación de métricas financieras.
+- **Data Analysis:** Cálculo de ratios de rentabilidad y retorno de inversión.
+- **Visualization:** Creación de un Dashboard ejecutivo para la toma de decisiones.
 
-### Executive Overview of the Process
-1. **Data Consolidation:** Used SQL to aggregate revenue, operational costs, and campaign expenses.
-2. **Profitability Analysis:** Calculated the **ROI_pct** for each territory to measure the effectiveness of every dollar spent on advertising.
-3. **Comparative Audit:** Normalized financial data to compare performance between markets with vastly different scales of operation.
+## 📊 Findings (Hallazgos Clave)
+Basado en el análisis de los datos consolidados:
+- **Líder en Eficiencia:** **United States** logra el mayor Beneficio Bruto ($1,454,468.60) con un ROI del **75.75%**, siendo el mercado más rentable.
+- **Punto Crítico en Europa:** Los mercados de **United Kingdom, Germany y France** muestran una tendencia preocupante: tienen los costos de campaña más altos (superando los $2.2M cada uno), pero sus retornos (ROI) son notablemente bajos (entre 17.96% y 22.05%).
+- **Anomalía de Gasto:** United Kingdom gasta mucho más en publicidad ($2,304,000.00) que EE. UU., pero genera mucho menos beneficio bruto.
 
-## 📊 Findings (Key Insights)
-- **Efficiency Leader:** The **United States** market is the top performer, achieving the highest Gross Profit ($1.45M) with a remarkable **ROI of 75.7%**.
-- **The European Paradox:** The **UK, Germany, and France** show a worrying trend. They have the highest campaign costs (each exceeding $2.2M) but the lowest ROI (between 18% and 22%).
-- **Diminishing Returns:** Increasing the ad spend in saturated markets (Europe) does not lead to proportional profit growth, suggesting a need for a strategy pivot.
-
-## 💡 Business Recommendations (CFI)
-1. **Strategic Budget Reallocation:** Reallocate a percentage of the marketing budget from low-ROI markets (Canada and France) to the **United States** to maximize global net utility without increasing the total budget.
-2. **Market Audit:** Conduct a deep dive into the UK and German markets to understand why they require such high investments ($2.2M+) to generate lower profits. 
-3. **Efficiency Over Volume:** Focus on improving the quality of conversion in European markets rather than increasing the volume of ad spend.
+## 💡 Business Recommendations (Implicaciones)
+1. **Reasignación Estratégica:** Reasignar un porcentaje del presupuesto de campañas de países con ROI bajo (como Canadá y Francia) hacia **United States**, para maximizar la utilidad neta global sin incrementar el gasto total.
+2. **Auditoría de Inversión:** Investigar por qué United Kingdom y Germany requieren inversiones superiores a los $2.2M para generar beneficios inferiores a los mercados más eficientes.
+3. **Optimización de Retornos:** Se recomienda no incrementar el gasto en el bloque europeo actualmente, ya que añadir más gasto publicitario en mercados saturados suele traer rendimientos decrecientes.
 
 ---
-**Main Dataset:** `Financial_Performance_Dashboard.csv`  
-**Contact:** mcrodriguez1508@gmail.com | [[Tu LinkedIn]](https://www.linkedin.com/in/mcrodriguez1508/) # Financial_Performance_SQL
-Audit of marketing spend efficiency and global ROI across 6 international markets using SQL and financial data
+### 🖥️ Dashboard Preview
+![Financial Dashboard](dashboard_finance.png) 
+
+---
+**File:** `Proyecto 3_ Análisis del desempeño financiero con SQL - Resumen ejecutivo (2)`
